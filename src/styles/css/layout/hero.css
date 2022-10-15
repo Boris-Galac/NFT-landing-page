@@ -1,0 +1,133 @@
+.hero {
+	position: relative;
+	display: var(--d-grid);
+	place-items: center;
+	margin-bottom: 5rem;
+	isolation: isolate;
+}
+.hero::before {
+	content: '';
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background: url('/src/styles/images/web-img.png') no-repeat center
+		center/cover;
+	z-index: -2;
+}
+.hero__row-1 {
+	display: var(--d-grid);
+}
+.hero__col-1 {
+	display: contents;
+}
+.hero__col-2 {
+	order: 2;
+}
+.hero__col-2 img {
+	margin-inline: auto;
+	margin-block: 1.5rem;
+}
+.hero .hero__heading,
+.hero .hero__subheading {
+	animation: hero 2s forwards;
+}
+@keyframes hero {
+	from {
+		opacity: 0;
+		transform: translateX(-20rem);
+	}
+	to {
+		opacity: 1;
+		transform: translateX(0rem);
+	}
+}
+.hero__heading,
+.hero__subheading {
+	order: 1;
+}
+.hero__heading {
+	color: var(--white);
+	font-size: clamp(3rem, 6vw, 10rem);
+	margin-top: 3rem;
+	margin-bottom: 1.5rem;
+	text-transform: capitalize;
+}
+.hero__subheading {
+	color: var(--white);
+	font-weight: 500;
+	width: 80vw;
+}
+.hero__btn-container {
+	display: var(--d-flex);
+	justify-content: space-around;
+	margin-block: 2rem;
+	order: 3;
+	max-width: 30rem;
+}
+.hero__row-2 p {
+	text-transform: uppercase;
+	color: var(--white);
+	margin-bottom: 0.5rem;
+}
+.hero__sponsors {
+	padding-block: 1rem;
+	padding-inline: 1rem;
+	border-radius: 7px;
+	background-color: hsla(256, 83%, 36%, 0.5);
+	display: var(--d-flex);
+	justify-content: space-between;
+	margin-inline: auto;
+	width: 80vw;
+}
+.hero__sponsors img {
+	width: clamp(4rem, 10vw, 10rem);
+}
+
+@media (min-width: 70rem) {
+	.hero {
+		height: 100vh;
+	}
+	.hero__row-1 {
+		display: var(--d-grid);
+		grid-template-columns: 50% 50%;
+	}
+	.hero__subheading {
+		color: var(--white);
+		font-weight: 500;
+		width: fit-content;
+		max-width: 32ch;
+	}
+	.hero__btn-container {
+		display: var(--d-flex);
+		justify-content: flex-start;
+		align-items: center;
+		gap: 1rem;
+	}
+	.hero__col-1 {
+		display: grid;
+	}
+	.hero__col-2 {
+		display: grid;
+		place-items: center;
+	}
+	.hero__col-2 img {
+		width: 100%;
+	}
+	.hero__sponsors {
+		position: absolute;
+		bottom: 0;
+		padding-block: 1rem;
+		padding-inline: 1rem;
+		border-radius: 7px;
+		background-color: hsla(256, 83%, 36%, 0.5);
+		display: var(--d-flex);
+		justify-content: space-between;
+	}
+	.hero__row-2 p {
+		text-transform: uppercase;
+		color: var(--white);
+		margin-bottom: 0.5rem;
+		position: absolute;
+		bottom: 12rem;
+	}
+}

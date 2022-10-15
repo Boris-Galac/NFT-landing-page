@@ -1,0 +1,57 @@
+.nav__list.is-open {
+	animation: menu-opened 0.6s forwards;
+}
+@keyframes menu-opened {
+	from {
+		transform: scaleX(0);
+		opacity: 0;
+	}
+	to {
+		transform: scaleX(1);
+		opacity: 1;
+		pointer-events: visible;
+	}
+}
+.nav__list.is-closed {
+	animation: menu-closed 0.6s forwards;
+}
+@keyframes menu-closed {
+	from {
+		transform: scaleX(1);
+		opacity: 1;
+	}
+	to {
+		transform: scaleX(0);
+		opacity: 0;
+		pointer-events: none;
+	}
+}
+
+/* search window */
+
+.search-overlay.is-open {
+	animation: search-opened 0.4s forwards;
+}
+@keyframes search-opened {
+	from {
+		pointer-events: none;
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+		pointer-events: visible;
+	}
+}
+.search-overlay.is-closed {
+	animation: search-closed 0.4s forwards;
+}
+@keyframes search-closed {
+	from {
+		opacity: 1;
+		pointer-events: visible;
+	}
+	to {
+		pointer-events: none;
+		opacity: 0;
+	}
+}

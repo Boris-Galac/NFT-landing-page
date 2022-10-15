@@ -1,0 +1,42 @@
+.container {
+	margin-inline: auto;
+	width: 85vw;
+}
+
+/* classes */
+
+.section-btn {
+	display: flex;
+	margin-inline: auto;
+	order: 2;
+	margin-block: 2rem;
+}
+.content-one {
+	display: contents;
+}
+.image-wrapper {
+	display: grid;
+	place-items: center;
+}
+@media (min-width: 70rem) {
+	.section .container {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+	}
+	.section-btn {
+		display: grid;
+		margin-inline: unset;
+		width: fit-content;
+	}
+	.content-one {
+		display: grid;
+	}
+	.image-wrapper {
+		display: grid;
+		place-items: center;
+	}
+	.container {
+		margin-inline: auto;
+		width: 65vw;
+	}
+}

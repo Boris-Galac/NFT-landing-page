@@ -1,0 +1,7 @@
+:root {
+	--white: #fff;
+	--black: #000;
+	--btn-primary: hsl(209, 85%, 58%);
+	--btn-dark: hsl(217, 21%, 17%);
+	--btn-dark-hover: hsl(223, 17%, 27%);
+}

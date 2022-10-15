@@ -1,0 +1,11 @@
+:root {
+	--d-flex: flex;
+	--d-grid: grid;
+	--center: center;
+	--gap-1: 1rem;
+	--measure-1: 1rem;
+	--time-transition: 0.3s;
+	--cursor: pointer;
+	--linear-body-bg: linear-gradient(106.49deg, #241773 7.69%, #17113d 106.17%);
+	--uppercase: uppercase;
+}

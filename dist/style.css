@@ -143,112 +143,112 @@ select {
 }.btn-dark:hover {
 	background-color: var(--btn-dark-hover);
 }.nav button {
-	background-color: transparent;
-	border: none;
+  background-color: transparent;
+  border: none;
 }.nav {
-	position: fixed;
-	padding-block: 1rem;
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
-	left: 0;
-	right: 0;
-	padding-inline: 1rem;
-	background: linear-gradient(106.49deg, #231773c2 7.69%, #17113dbb 106.17%);
-	z-index: 10;
+  position: fixed;
+  padding-block: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  left: 0;
+  right: 0;
+  padding-inline: 1rem;
+  background: linear-gradient(106.49deg, #231773c2 7.69%, #17113dbb 106.17%);
+  z-index: 10;
 }.nav__logo {
-	background-color: var(--black);
-	padding: 0.4rem;
-	border-radius: 100vmax;
+  background-color: var(--black);
+  padding: 0.4rem;
+  border-radius: 100vmax;
 }.nav__list {
-	display: flex;
-	gap: 4rem;
+  display: flex;
+  gap: 4rem;
 }.nav__link {
-	position: relative;
-	color: var(--white);
-	text-transform: capitalize;
-	font-weight: 500;
-	padding: 0.5rem;
-	transition: 0.3s;
-	font-size: 1.1rem;
+  position: relative;
+  color: var(--white);
+  text-transform: capitalize;
+  font-weight: 500;
+  padding: 0.5rem;
+  transition: 0.3s;
+  font-size: 1.1rem;
 }.nav__link:hover {
-	scale: 1.2;
+  scale: 1.2;
 }.nav__link::after {
-	content: '';
-	position: absolute;
-	height: 2px;
-	width: 80%;
-	background-color: var(--white);
-	display: block;
-	text-align: center;
-	transform-origin: left;
-	transform: scaleX(0);
-	transition: 0.3s;
+  content: "";
+  position: absolute;
+  height: 2px;
+  width: 80%;
+  background-color: var(--white);
+  display: block;
+  text-align: center;
+  transform-origin: left;
+  transform: scaleX(0);
+  transition: 0.3s;
 }.nav__link:hover::after {
-	transform: scaleX(1);
+  transform: scaleX(1);
 }.nav__right-btns {
-	display: flex;
-	gap: 1rem;
+  display: flex;
+  gap: 1rem;
 }.nav__search-icon,
 .nav__ham-icon {
-	aspect-ratio: 1;
-	width: 2.5rem;
-	cursor: pointer;
+  aspect-ratio: 1;
+  width: 2.5rem;
+  cursor: pointer;
 }.nav__ham-icon {
-	position: relative;
-	display: grid;
-	place-items: center;
-	aspect-ratio: 1;
-	width: 2.5rem;
-	z-index: 2;
-	display: none;
+  position: relative;
+  display: grid;
+  place-items: center;
+  aspect-ratio: 1;
+  width: 2.5rem;
+  z-index: 2;
+  display: none;
 }.nav__search-icon:hover {
-	transition: 0.3s;
-	scale: 1.2;
+  transition: 0.3s;
+  scale: 1.2;
 }.nav__line {
-	width: 100%;
-	height: 2px;
-	border-radius: 100vmax;
-	background-color: var(--white);
-	transition: 0.3s;
+  width: 100%;
+  height: 2px;
+  border-radius: 100vmax;
+  background-color: var(--white);
+  transition: 0.3s;
 }.active {
-	position: absolute;
+  position: absolute;
 }.nav__line:nth-child(1).active {
-	rotate: 45deg;
+  rotate: 45deg;
 }.nav__line:nth-child(2).active {
-	opacity: 0;
+  opacity: 0;
 }.nav__line:nth-child(3).active {
-	rotate: -45deg;
+  rotate: -45deg;
 }@media (max-width: 40rem) {
-	.nav__right-btns {
-		z-index: 2;
-	}
-	.nav__list {
-		position: absolute;
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		justify-content: center;
-		gap: 8rem;
-		background-color: rgba(0, 0, 0, 0.895);
-		right: 0;
-		top: 0;
-		bottom: 0;
-		transform-origin: right;
-		opacity: 0;
-		pointer-events: none;
-		width: 75vw;
-		height: 100vh;
-	}
-	.nav__link {
-		font-size: 1.5rem;
-	}
-	.nav__link::after {
-		background-color: transparent;
-	}
-	.nav__ham-icon {
-		display: grid;
-	}
+  .nav__right-btns {
+    z-index: 2;
+  }
+  .nav__list {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5vh;
+    background-color: rgba(0, 0, 0, 0.895);
+    right: 0;
+    top: 0;
+    bottom: 0;
+    transform-origin: right;
+    opacity: 0;
+    pointer-events: none;
+    width: 75vw;
+    height: 100vh;
+  }
+  .nav__link {
+    font-size: 1.5rem;
+  }
+  .nav__link::after {
+    background-color: transparent;
+  }
+  .nav__ham-icon {
+    display: grid;
+  }
 }.hero {
 	position: relative;
 	display: var(--d-grid);
